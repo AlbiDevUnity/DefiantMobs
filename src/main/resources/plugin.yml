@@ -1,0 +1,14 @@
+name: DefiantMobs
+version: '${project.version}'
+main: dev.albi.defiantmobs.Core
+api-version: 1.19
+commands:
+  addChance:
+    description: add a chance [1-100] for a mob to spawn a defiant variant
+    usage: /<command> [entityType] [chance]
+  removeChance:
+    description: remove the ability for a mob to spawn a defiant variant
+    usage: /<command> [entityType]
+  getChances:
+    description: get all mob chances of becoming Defiant
+    usage: /<command>

@@ -1,0 +1,11 @@
+dev\albi\defiantmobs\mobs\DefiantMobModule.class
+dev\albi\defiantmobs\utils\DefiantMobUtils.class
+dev\albi\defiantmobs\commands\AddChanceCommand.class
+dev\albi\defiantmobs\mobs\DefiantMobModule$1.class
+dev\albi\defiantmobs\Module.class
+dev\albi\defiantmobs\PluginManager.class
+dev\albi\defiantmobs\Core.class
+dev\albi\defiantmobs\utils\DefiantMobUtils$1.class
+dev\albi\defiantmobs\mobs\ShowHealthModule.class
+dev\albi\defiantmobs\commands\RemoveChanceCommand.class
+dev\albi\defiantmobs\commands\GetChancesCommand.class
