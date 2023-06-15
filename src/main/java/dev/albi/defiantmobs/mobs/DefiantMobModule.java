@@ -3,7 +3,6 @@ package dev.albi.defiantmobs.mobs;
 import dev.albi.defiantmobs.Module;
 import dev.albi.defiantmobs.utils.DefiantMobUtils;
 import lombok.Getter;
-import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 import org.bukkit.Particle;
 import org.bukkit.Sound;
@@ -18,7 +17,6 @@ import org.bukkit.plugin.java.JavaPlugin;
 import org.bukkit.scheduler.BukkitRunnable;
 import org.bukkit.scheduler.BukkitTask;
 
-import java.io.File;
 import java.util.HashMap;
 import java.util.concurrent.ThreadLocalRandom;
 
@@ -70,7 +68,7 @@ public class DefiantMobModule extends Module implements Listener {
         int chance = ThreadLocalRandom.current().nextInt(1, 100 + 1);
         if(!(chance <= chances.get(e.getType().toString().toLowerCase()))) { return; }
 
-        BukkitTask particleTask = new BukkitRunnable(){
+        new BukkitRunnable(){
             int amount = 40;
             int i = 0;
             @Override

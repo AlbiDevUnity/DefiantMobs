@@ -1,6 +1,7 @@
 package dev.albi.defiantmobs.commands;
 
 import dev.albi.defiantmobs.mobs.DefiantMobModule;
+import lombok.NonNull;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
@@ -15,7 +16,7 @@ public class GetChancesCommand implements CommandExecutor {
     }
 
     @Override
-    public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
+    public boolean onCommand(@NonNull CommandSender sender, @NonNull Command command, @NonNull String label, String @NonNull [] args) {
         if(! (sender instanceof Player)) { return true; }
 
         for (String entityType: module.getChances().keySet()) {
